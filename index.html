@@ -3,152 +3,356 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Tu Nombre | Portfolio</title>
-  <meta name="description" content="Portfolio de Tu Nombre: proyectos, habilidades y contacto." />
+  <title>Aaron Enrique Segarra | Técnico ASIR</title>
+  <meta name="description" content="Portfolio de Aaron Enrique Segarra. Estudiante de ASIR y técnico IT: soporte, redes, puntos de acceso y mantenimiento." />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <!-- Header fijo con menú por anclas -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#inicio" aria-label="Ir a inicio">
-        <img src="assets/logo.png" alt="Logo" class="brand-logo" />
-        <span class="brand-text">Tu Nombre</span>
+        <span class="brand-mark">AES</span>
+        <span class="brand-text">Aaron Enrique Segarra</span>
       </a>
 
-      <nav class="nav">
+      <nav class="nav" aria-label="Navegación principal">
         <a href="#sobre-mi">Sobre mí</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#experiencia">Experiencia</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#habilidades">Habilidades</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#contacto" class="nav-cta">Contacto</a>
       </nav>
     </div>
   </header>
 
-  <!-- Banner / Inicio -->
   <main id="inicio">
+    <!-- HERO -->
     <section class="hero">
       <div class="container hero-inner">
-        <h1>Tu Nombre Apellidos</h1>
-        <p class="hero-subtitle">Portfolio | SMR | Sistemas y Redes</p>
+        <div class="hero-badge">Estudiante de ASIR · Técnico IT</div>
+        <h1>Aaron Enrique Segarra</h1>
+        <p class="hero-subtitle">
+          Trabajo en el sector tecnológico resolviendo incidencias, reparando equipos y desplegando redes
+          (incluyendo proyectos de puntos de acceso). Portfolio con proyectos y habilidades enfocadas a entornos reales.
+        </p>
+
         <div class="hero-cta">
           <a class="btn" href="#proyectos">Ver proyectos</a>
           <a class="btn btn-ghost" href="#contacto">Contactar</a>
         </div>
+
+        <div class="hero-stats" role="list">
+          <div class="stat" role="listitem">
+            <span class="stat-k">Soporte</span>
+            <span class="stat-v">Incidencias · Diagnóstico</span>
+          </div>
+          <div class="stat" role="listitem">
+            <span class="stat-k">Redes</span>
+            <span class="stat-v">LAN · WiFi · APs</span>
+          </div>
+          <div class="stat" role="listitem">
+            <span class="stat-k">Hardware</span>
+            <span class="stat-v">Montaje · Reparación</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Sobre mí -->
+    <!-- SOBRE MI -->
     <section id="sobre-mi" class="section">
       <div class="container">
         <h2>Sobre mí</h2>
 
-        <div class="card about-card">
-          <p>
-            Escribe aquí una breve biografía: qué estás estudiando, qué te interesa
-            (redes, Linux, ciberseguridad, hardware…), y tu objetivo profesional.
-          </p>
+        <div class="card about-grid">
+          <div>
+            <p class="lead">
+              Soy estudiante de <strong>Administración de Sistemas Informáticos en Red (ASIR)</strong> y actualmente
+              trabajo como <strong>técnico IT</strong> dando soporte y ejecutando tareas de sistemas y redes.
+            </p>
+            <p class="muted">
+              Me muevo bien en entornos con presión: analizo, priorizo, documento y soluciono. Me gusta dejar las cosas
+              estables, seguras y bien explicadas para que no vuelvan a fallar. Mi objetivo es seguir creciendo en
+              infraestructura, redes y seguridad.
+            </p>
 
-          <div class="social">
-            <a class="social-icon" href="https://github.com/TUUSUARIO" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="social-icon" href="https://www.linkedin.com/in/TUPERFIL" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a class="social-icon" href="mailto:tuemail@ejemplo.com">Email</a>
+            <div class="pill-row">
+              <span class="pill">Resolución de incidencias</span>
+              <span class="pill">Redes y WiFi</span>
+              <span class="pill">Mantenimiento</span>
+              <span class="pill">Documentación</span>
+            </div>
+          </div>
+
+          <div class="about-card">
+            <div class="about-title">Datos rápidos</div>
+            <ul class="about-list">
+              <li><span>Rol:</span> Técnico IT / Estudiante ASIR</li>
+              <li><span>Enfoque:</span> Sistemas · Redes · Soporte</li>
+              <li><span>Disponibilidad:</span> Prácticas / proyectos / colaboración</li>
+            </ul>
+
+            <div class="social">
+              <a class="social-icon" href="https://github.com/TUUSUARIO" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="social-icon" href="https://www.linkedin.com/in/TUPERFIL" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="social-icon" href="#contacto">Email</a>
+            </div>
+
+            <p class="tiny muted">
+              * Cambia los enlaces de GitHub/LinkedIn por los tuyos.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Proyectos -->
-    <section id="proyectos" class="section alt">
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section alt">
       <div class="container">
-        <h2>Proyectos</h2>
-        <p class="muted">Mínimo 6 proyectos. Cada tarjeta: imagen, título y descripción.</p>
+        <h2>Servicios</h2>
+        <p class="muted">Lo que hago habitualmente en el sector (y lo que ofrezco en proyectos).</p>
 
-        <div class="grid">
-          <!-- Repite 6+ -->
-          <article class="card project">
-            <img src="assets/proyecto1.jpg" alt="Captura del proyecto 1" class="project-img" />
-            <h3>Proyecto 1</h3>
-            <p>Descripción breve: objetivo, herramientas usadas y resultado.</p>
+        <div class="grid-3">
+          <article class="card service">
+            <h3>Soporte & Incidencias</h3>
+            <p>Diagnóstico, resolución y escalado. Priorización por impacto y documentación del cierre.</p>
+            <ul class="mini-list">
+              <li>Problemas de usuario y software</li>
+              <li>Conectividad y red</li>
+              <li>Rendimiento y estabilidad</li>
+            </ul>
           </article>
 
-          <article class="card project">
-            <img src="assets/proyecto2.jpg" alt="Captura del proyecto 2" class="project-img" />
-            <h3>Proyecto 2</h3>
-            <p>Descripción breve: qué hiciste y qué aprendiste.</p>
+          <article class="card service">
+            <h3>Redes & WiFi</h3>
+            <p>Diseño y despliegue de red local y WiFi. Configuración básica y pruebas de cobertura.</p>
+            <ul class="mini-list">
+              <li>LAN, direccionamiento IP</li>
+              <li>Puntos de acceso (AP)</li>
+              <li>Optimización y verificación</li>
+            </ul>
           </article>
 
-          <article class="card project">
-            <img src="assets/proyecto3.jpg" alt="Captura del proyecto 3" class="project-img" />
-            <h3>Proyecto 3</h3>
-            <p>Descripción breve del proyecto.</p>
-          </article>
-
-          <article class="card project">
-            <img src="assets/proyecto4.jpg" alt="Captura del proyecto 4" class="project-img" />
-            <h3>Proyecto 4</h3>
-            <p>Descripción breve del proyecto.</p>
-          </article>
-
-          <article class="card project">
-            <img src="assets/proyecto5.jpg" alt="Captura del proyecto 5" class="project-img" />
-            <h3>Proyecto 5</h3>
-            <p>Descripción breve del proyecto.</p>
-          </article>
-
-          <article class="card project">
-            <img src="assets/proyecto6.jpg" alt="Captura del proyecto 6" class="project-img" />
-            <h3>Proyecto 6</h3>
-            <p>Descripción breve del proyecto.</p>
+          <article class="card service">
+            <h3>Hardware & Mantenimiento</h3>
+            <p>Montaje, reparación y puesta a punto. Sustitución de componentes y mantenimiento preventivo.</p>
+            <ul class="mini-list">
+              <li>Actualización RAM/SSD</li>
+              <li>Diagnóstico hardware</li>
+              <li>Limpieza y optimización</li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Habilidades -->
+    <!-- EXPERIENCIA -->
+    <section id="experiencia" class="section">
+      <div class="container">
+        <h2>Experiencia</h2>
+
+        <div class="timeline">
+          <div class="card timeline-item">
+            <div class="timeline-top">
+              <h3>Técnico IT (Soporte / Sistemas)</h3>
+              <span class="tag">Actual</span>
+            </div>
+            <p class="muted">
+              Resolución de incidencias, soporte a usuarios, mantenimiento de equipos y tareas de red.
+              Documentación y mejora de procedimientos para acelerar la resolución y reducir recurrencias.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Tickets</span>
+              <span class="pill">Soporte</span>
+              <span class="pill">Red</span>
+              <span class="pill">Mantenimiento</span>
+            </div>
+          </div>
+
+          <div class="card timeline-item">
+            <div class="timeline-top">
+              <h3>Estudiante de ASIR</h3>
+              <span class="tag">En curso</span>
+            </div>
+            <p class="muted">
+              Formación en administración de sistemas, redes, servicios y fundamentos de seguridad.
+              Laboratorios prácticos: Linux, redes, configuración y troubleshooting.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Linux</span>
+              <span class="pill">Redes</span>
+              <span class="pill">Servicios</span>
+              <span class="pill">Seguridad</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="tiny muted">* Puedes añadir aquí el nombre de empresa/fechas si quieres.</p>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="section alt">
+      <div class="container">
+        <h2>Proyectos</h2>
+        <p class="muted">Selección de proyectos y tareas reales (mínimo 6).</p>
+
+        <div class="grid">
+          <article class="card project">
+            <div class="project-top">
+              <h3>Despliegue de puntos de acceso</h3>
+              <span class="chip">WiFi</span>
+            </div>
+            <p>Instalación y configuración de APs, verificación de cobertura y estabilidad en entorno real.</p>
+            <ul class="mini-list">
+              <li>Planificación básica</li>
+              <li>Configuración y pruebas</li>
+              <li>Validación final</li>
+            </ul>
+          </article>
+
+          <article class="card project">
+            <div class="project-top">
+              <h3>Resolución de incidencias (soporte)</h3>
+              <span class="chip">Soporte</span>
+            </div>
+            <p>Diagnóstico y solución de problemas en Windows/red, minimizando tiempos de parada.</p>
+            <ul class="mini-list">
+              <li>Reproducción y análisis</li>
+              <li>Solución / workaround</li>
+              <li>Documentación</li>
+            </ul>
+          </article>
+
+          <article class="card project">
+            <div class="project-top">
+              <h3>Reparación y puesta a punto de PCs</h3>
+              <span class="chip">Hardware</span>
+            </div>
+            <p>Montaje, sustitución de componentes, optimización y pruebas de estabilidad.</p>
+            <ul class="mini-list">
+              <li>RAM/SSD</li>
+              <li>Drivers y sistema</li>
+              <li>Test y verificación</li>
+            </ul>
+          </article>
+
+          <article class="card project">
+            <div class="project-top">
+              <h3>Configuración de red LAN</h3>
+              <span class="chip">Redes</span>
+            </div>
+            <p>Diseño básico, direccionamiento IP y verificación de conectividad en red local.</p>
+            <ul class="mini-list">
+              <li>IP / gateway / DNS</li>
+              <li>Pruebas (ping/traceroute)</li>
+              <li>Checklist de entrega</li>
+            </ul>
+          </article>
+
+          <article class="card project">
+            <div class="project-top">
+              <h3>Servidor Linux (laboratorio)</h3>
+              <span class="chip">Linux</span>
+            </div>
+            <p>Instalación y configuración de servicios básicos y administración por terminal.</p>
+            <ul class="mini-list">
+              <li>Usuarios y permisos</li>
+              <li>Servicios y logs</li>
+              <li>Buenas prácticas</li>
+            </ul>
+          </article>
+
+          <article class="card project">
+            <div class="project-top">
+              <h3>Documentación técnica</h3>
+              <span class="chip">Procesos</span>
+            </div>
+            <p>Creación de guías y procedimientos para acelerar soporte y estandarizar soluciones.</p>
+            <ul class="mini-list">
+              <li>Pasos claros</li>
+              <li>Capturas/checklists</li>
+              <li>Mejora continua</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
     <section id="habilidades" class="section">
       <div class="container">
         <h2>Habilidades</h2>
+        <p class="muted">Resumen de mis competencias técnicas (ajústalo a tu nivel real).</p>
 
         <div class="skills">
           <div class="skill card">
             <div class="skill-top">
-              <span class="skill-name">Linux</span>
-              <span class="skill-level">80%</span>
+              <span class="skill-name">Soporte técnico</span>
+              <span class="skill-level">85%</span>
             </div>
-            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
-            <p class="muted">Administración básica, terminal, permisos, servicios.</p>
+            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+            <p class="muted">Incidencias, troubleshooting, documentación y comunicación con usuarios.</p>
           </div>
 
           <div class="skill card">
             <div class="skill-top">
-              <span class="skill-name">Redes</span>
-              <span class="skill-level">70%</span>
-            </div>
-            <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
-            <p class="muted">IP, VLAN, routing básico, Wireshark.</p>
-          </div>
-
-          <div class="skill card">
-            <div class="skill-top">
-              <span class="skill-name">HTML/CSS</span>
+              <span class="skill-name">Redes (LAN/WiFi)</span>
               <span class="skill-level">75%</span>
             </div>
             <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
-            <p class="muted">Maquetación responsive, grid, accesibilidad básica.</p>
+            <p class="muted">IP, conectividad, despliegue de APs y verificación de rendimiento.</p>
+          </div>
+
+          <div class="skill card">
+            <div class="skill-top">
+              <span class="skill-name">Linux</span>
+              <span class="skill-level">70%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+            <p class="muted">Terminal, permisos, servicios básicos, logs y administración inicial.</p>
+          </div>
+
+          <div class="skill card">
+            <div class="skill-top">
+              <span class="skill-name">Hardware</span>
+              <span class="skill-level">80%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+            <p class="muted">Montaje, diagnóstico, upgrades y mantenimiento preventivo.</p>
+          </div>
+
+          <div class="skill card">
+            <div class="skill-top">
+              <span class="skill-name">Windows</span>
+              <span class="skill-level">75%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+            <p class="muted">Configuración, drivers, optimización, resolución de problemas comunes.</p>
+          </div>
+
+          <div class="skill card">
+            <div class="skill-top">
+              <span class="skill-name">Documentación</span>
+              <span class="skill-level">80%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+            <p class="muted">Guías claras, checklists, handover y procedimientos repetibles.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contacto -->
+    <!-- CONTACTO -->
     <section id="contacto" class="section alt">
       <div class="container">
         <h2>Contacto</h2>
+        <p class="muted">Si quieres hablar de soporte, redes o proyectos, escríbeme.</p>
 
         <!-- Validación HTML5: required + type=email -->
-        <form class="card form" action="https://formspree.io/f/TU_ENDPOINT" method="POST">
+        <form class="card form" action="mailto:tuemail@ejemplo.com" method="POST" enctype="text/plain">
           <label>
             Nombre
             <input name="name" type="text" required placeholder="Tu nombre" />
@@ -161,24 +365,26 @@
 
           <label>
             Mensaje
-            <textarea name="message" required rows="5" placeholder="Cuéntame en qué puedo ayudarte"></textarea>
+            <textarea name="message" required rows="5" placeholder="Cuéntame qué necesitas"></textarea>
           </label>
 
           <button class="btn" type="submit">Enviar</button>
-          <p class="muted small">* Cambia el action por tu endpoint (Formspree) o usa mailto si te lo permiten.</p>
+          <p class="tiny muted">
+            * Si prefieres formulario real (sin abrir el mail), usa Formspree y cambia el <code>action</code>.
+          </p>
         </form>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
-    <div class="container">
-      <p>© 2024 Tu Nombre. Todos los derechos reservados.</p>
+    <div class="container footer-inner">
+      <p>© 2024 Aaron Enrique Segarra · Técnico ASIR</p>
+      <a class="top" href="#inicio">Volver arriba ↑</a>
     </div>
   </footer>
 
-  <!-- Cookies banner -->
+  <!-- Cookies banner (fixed + click o 5s) -->
   <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite">
     <span>Este sitio usa cookies para mejorar la experiencia.</span>
     <button id="cookie-accept" class="cookie-btn" type="button">Aceptar</button>
