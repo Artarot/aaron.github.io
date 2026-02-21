@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tu Nombre | Portfolio</title>
+  <meta name="description" content="Portfolio de Tu Nombre: proyectos, habilidades y contacto." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Header fijo con menú por anclas -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Ir a inicio">
+        <img src="assets/logo.png" alt="Logo" class="brand-logo" />
+        <span class="brand-text">Tu Nombre</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner / Inicio -->
+  <main id="inicio">
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Tu Nombre Apellidos</h1>
+        <p class="hero-subtitle">Portfolio | SMR | Sistemas y Redes</p>
+        <div class="hero-cta">
+          <a class="btn" href="#proyectos">Ver proyectos</a>
+          <a class="btn btn-ghost" href="#contacto">Contactar</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="section">
+      <div class="container">
+        <h2>Sobre mí</h2>
+
+        <div class="card about-card">
+          <p>
+            Escribe aquí una breve biografía: qué estás estudiando, qué te interesa
+            (redes, Linux, ciberseguridad, hardware…), y tu objetivo profesional.
+          </p>
+
+          <div class="social">
+            <a class="social-icon" href="https://github.com/TUUSUARIO" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="social-icon" href="https://www.linkedin.com/in/TUPERFIL" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="social-icon" href="mailto:tuemail@ejemplo.com">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="section alt">
+      <div class="container">
+        <h2>Proyectos</h2>
+        <p class="muted">Mínimo 6 proyectos. Cada tarjeta: imagen, título y descripción.</p>
+
+        <div class="grid">
+          <!-- Repite 6+ -->
+          <article class="card project">
+            <img src="assets/proyecto1.jpg" alt="Captura del proyecto 1" class="project-img" />
+            <h3>Proyecto 1</h3>
+            <p>Descripción breve: objetivo, herramientas usadas y resultado.</p>
+          </article>
+
+          <article class="card project">
+            <img src="assets/proyecto2.jpg" alt="Captura del proyecto 2" class="project-img" />
+            <h3>Proyecto 2</h3>
+            <p>Descripción breve: qué hiciste y qué aprendiste.</p>
+          </article>
+
+          <article class="card project">
+            <img src="assets/proyecto3.jpg" alt="Captura del proyecto 3" class="project-img" />
+            <h3>Proyecto 3</h3>
+            <p>Descripción breve del proyecto.</p>
+          </article>
+
+          <article class="card project">
+            <img src="assets/proyecto4.jpg" alt="Captura del proyecto 4" class="project-img" />
+            <h3>Proyecto 4</h3>
+            <p>Descripción breve del proyecto.</p>
+          </article>
+
+          <article class="card project">
+            <img src="assets/proyecto5.jpg" alt="Captura del proyecto 5" class="project-img" />
+            <h3>Proyecto 5</h3>
+            <p>Descripción breve del proyecto.</p>
+          </article>
+
+          <article class="card project">
+            <img src="assets/proyecto6.jpg" alt="Captura del proyecto 6" class="project-img" />
+            <h3>Proyecto 6</h3>
+            <p>Descripción breve del proyecto.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="section">
+      <div class="container">
+        <h2>Habilidades</h2>
+
+        <div class="skills">
+          <div class="skill card">
+            <div class="skill-top">
+              <span class="skill-name">Linux</span>
+              <span class="skill-level">80%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+            <p class="muted">Administración básica, terminal, permisos, servicios.</p>
+          </div>
+
+          <div class="skill card">
+            <div class="skill-top">
+              <span class="skill-name">Redes</span>
+              <span class="skill-level">70%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+            <p class="muted">IP, VLAN, routing básico, Wireshark.</p>
+          </div>
+
+          <div class="skill card">
+            <div class="skill-top">
+              <span class="skill-name">HTML/CSS</span>
+              <span class="skill-level">75%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+            <p class="muted">Maquetación responsive, grid, accesibilidad básica.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section alt">
+      <div class="container">
+        <h2>Contacto</h2>
+
+        <!-- Validación HTML5: required + type=email -->
+        <form class="card form" action="https://formspree.io/f/TU_ENDPOINT" method="POST">
+          <label>
+            Nombre
+            <input name="name" type="text" required placeholder="Tu nombre" />
+          </label>
+
+          <label>
+            Email
+            <input name="email" type="email" required placeholder="tucorreo@ejemplo.com" />
+          </label>
+
+          <label>
+            Mensaje
+            <textarea name="message" required rows="5" placeholder="Cuéntame en qué puedo ayudarte"></textarea>
+          </label>
+
+          <button class="btn" type="submit">Enviar</button>
+          <p class="muted small">* Cambia el action por tu endpoint (Formspree) o usa mailto si te lo permiten.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2024 Tu Nombre. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Cookies banner -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite">
+    <span>Este sitio usa cookies para mejorar la experiencia.</span>
+    <button id="cookie-accept" class="cookie-btn" type="button">Aceptar</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
